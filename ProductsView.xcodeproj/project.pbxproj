@@ -14,6 +14,22 @@
 		CD5CDA5F1CD910CC0002B236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA5D1CD910CC0002B236 /* LaunchScreen.storyboard */; };
 		CD5CDA6A1CD910CC0002B236 /* ProductsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA691CD910CC0002B236 /* ProductsViewTests.swift */; };
 		CD5CDA751CD910CC0002B236 /* ProductsViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA741CD910CC0002B236 /* ProductsViewUITests.swift */; };
+		CD5CDA861CD917E90002B236 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA851CD917E90002B236 /* Product.swift */; };
+		CD5CDA881CD919C40002B236 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA871CD919C40002B236 /* ProductCollectionViewCell.swift */; };
+		CD5CDA961CD91FEC0002B236 /* iPad4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA8B1CD91FEC0002B236 /* iPad4.jpeg */; };
+		CD5CDA971CD91FEC0002B236 /* iPodTouch6g.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA8C1CD91FEC0002B236 /* iPodTouch6g.jpg */; };
+		CD5CDA981CD91FEC0002B236 /* GibsonL5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA8D1CD91FEC0002B236 /* GibsonL5.jpg */; };
+		CD5CDA991CD91FEC0002B236 /* SonorBop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA8E1CD91FEC0002B236 /* SonorBop.jpg */; };
+		CD5CDA9A1CD91FEC0002B236 /* DangelicoEx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA8F1CD91FEC0002B236 /* DangelicoEx.jpg */; };
+		CD5CDA9B1CD91FEC0002B236 /* Barcelona16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA901CD91FEC0002B236 /* Barcelona16.jpg */; };
+		CD5CDA9D1CD91FEC0002B236 /* Stove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA921CD91FEC0002B236 /* Stove.jpg */; };
+		CD5CDA9E1CD91FEC0002B236 /* RcpByTheWay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA931CD91FEC0002B236 /* RcpByTheWay.jpg */; };
+		CD5CDA9F1CD91FEC0002B236 /* MilesDavisKindofBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA941CD91FEC0002B236 /* MilesDavisKindofBlue.jpg */; };
+		CD5CDAA11CD92B180002B236 /* iPodTouch6g.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDAA01CD92B180002B236 /* iPodTouch6g.jpeg */; };
+		CD5CDAA31CD92BA00002B236 /* MacbookPro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDAA21CD92BA00002B236 /* MacbookPro.jpg */; };
+		CD5CDAA51CD92BF50002B236 /* Washer.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDAA41CD92BF50002B236 /* Washer.gif */; };
+		CD5CDAA71CD92E7E0002B236 /* ProductReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */; };
+		CDE51B3D1CDA5B010089B5FF /* ImageScrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +63,22 @@
 		CD5CDA701CD910CC0002B236 /* ProductsViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5CDA741CD910CC0002B236 /* ProductsViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewUITests.swift; sourceTree = "<group>"; };
 		CD5CDA761CD910CC0002B236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5CDA851CD917E90002B236 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CD5CDA871CD919C40002B236 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD5CDA8B1CD91FEC0002B236 /* iPad4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iPad4.jpeg; sourceTree = "<group>"; };
+		CD5CDA8C1CD91FEC0002B236 /* iPodTouch6g.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iPodTouch6g.jpg; sourceTree = "<group>"; };
+		CD5CDA8D1CD91FEC0002B236 /* GibsonL5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GibsonL5.jpg; sourceTree = "<group>"; };
+		CD5CDA8E1CD91FEC0002B236 /* SonorBop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SonorBop.jpg; sourceTree = "<group>"; };
+		CD5CDA8F1CD91FEC0002B236 /* DangelicoEx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DangelicoEx.jpg; sourceTree = "<group>"; };
+		CD5CDA901CD91FEC0002B236 /* Barcelona16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Barcelona16.jpg; sourceTree = "<group>"; };
+		CD5CDA921CD91FEC0002B236 /* Stove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stove.jpg; sourceTree = "<group>"; };
+		CD5CDA931CD91FEC0002B236 /* RcpByTheWay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RcpByTheWay.jpg; sourceTree = "<group>"; };
+		CD5CDA941CD91FEC0002B236 /* MilesDavisKindofBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MilesDavisKindofBlue.jpg; sourceTree = "<group>"; };
+		CD5CDAA01CD92B180002B236 /* iPodTouch6g.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iPodTouch6g.jpeg; sourceTree = "<group>"; };
+		CD5CDAA21CD92BA00002B236 /* MacbookPro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MacbookPro.jpg; sourceTree = "<group>"; };
+		CD5CDAA41CD92BF50002B236 /* Washer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Washer.gif; sourceTree = "<group>"; };
+		CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductReviewViewController.swift; sourceTree = "<group>"; };
+		CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +129,23 @@
 		CD5CDA531CD910CC0002B236 /* ProductsView */ = {
 			isa = PBXGroup;
 			children = (
+				CD5CDA8B1CD91FEC0002B236 /* iPad4.jpeg */,
+				CD5CDAA41CD92BF50002B236 /* Washer.gif */,
+				CD5CDA8C1CD91FEC0002B236 /* iPodTouch6g.jpg */,
+				CD5CDAA01CD92B180002B236 /* iPodTouch6g.jpeg */,
+				CD5CDA8D1CD91FEC0002B236 /* GibsonL5.jpg */,
+				CD5CDA8E1CD91FEC0002B236 /* SonorBop.jpg */,
+				CD5CDA8F1CD91FEC0002B236 /* DangelicoEx.jpg */,
+				CD5CDAA21CD92BA00002B236 /* MacbookPro.jpg */,
+				CD5CDA901CD91FEC0002B236 /* Barcelona16.jpg */,
+				CD5CDA921CD91FEC0002B236 /* Stove.jpg */,
+				CD5CDA931CD91FEC0002B236 /* RcpByTheWay.jpg */,
+				CD5CDA941CD91FEC0002B236 /* MilesDavisKindofBlue.jpg */,
+				CD5CDA891CD91FD80002B236 /* Resources */,
+				CD5CDA841CD917350002B236 /* View */,
+				CD5CDA831CD917280002B236 /* ViewController */,
+				CD5CDA821CD9170E0002B236 /* Model */,
 				CD5CDA541CD910CC0002B236 /* AppDelegate.swift */,
-				CD5CDA561CD910CC0002B236 /* ViewController.swift */,
 				CD5CDA581CD910CC0002B236 /* Main.storyboard */,
 				CD5CDA5B1CD910CC0002B236 /* Assets.xcassets */,
 				CD5CDA5D1CD910CC0002B236 /* LaunchScreen.storyboard */,
@@ -123,6 +170,39 @@
 				CD5CDA761CD910CC0002B236 /* Info.plist */,
 			);
 			path = ProductsViewUITests;
+			sourceTree = "<group>";
+		};
+		CD5CDA821CD9170E0002B236 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD5CDA851CD917E90002B236 /* Product.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CD5CDA831CD917280002B236 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD5CDA561CD910CC0002B236 /* ViewController.swift */,
+				CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */,
+				CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CD5CDA841CD917350002B236 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD5CDA871CD919C40002B236 /* ProductCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD5CDA891CD91FD80002B236 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +273,7 @@
 				TargetAttributes = {
 					CD5CDA501CD910CC0002B236 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = A6GBL74394;
+						DevelopmentTeam = FJ44GB6X5Y;
 					};
 					CD5CDA641CD910CC0002B236 = {
 						CreatedOnToolsVersion = 7.3;
@@ -232,9 +312,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5CDAA31CD92BA00002B236 /* MacbookPro.jpg in Resources */,
+				CD5CDA971CD91FEC0002B236 /* iPodTouch6g.jpg in Resources */,
 				CD5CDA5F1CD910CC0002B236 /* LaunchScreen.storyboard in Resources */,
+				CD5CDA9B1CD91FEC0002B236 /* Barcelona16.jpg in Resources */,
+				CD5CDAA11CD92B180002B236 /* iPodTouch6g.jpeg in Resources */,
+				CD5CDA961CD91FEC0002B236 /* iPad4.jpeg in Resources */,
 				CD5CDA5C1CD910CC0002B236 /* Assets.xcassets in Resources */,
+				CD5CDA9F1CD91FEC0002B236 /* MilesDavisKindofBlue.jpg in Resources */,
+				CD5CDA9D1CD91FEC0002B236 /* Stove.jpg in Resources */,
+				CD5CDA981CD91FEC0002B236 /* GibsonL5.jpg in Resources */,
+				CD5CDA9A1CD91FEC0002B236 /* DangelicoEx.jpg in Resources */,
+				CD5CDAA51CD92BF50002B236 /* Washer.gif in Resources */,
+				CD5CDA991CD91FEC0002B236 /* SonorBop.jpg in Resources */,
 				CD5CDA5A1CD910CC0002B236 /* Main.storyboard in Resources */,
+				CD5CDA9E1CD91FEC0002B236 /* RcpByTheWay.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE51B3D1CDA5B010089B5FF /* ImageScrollerViewController.swift in Sources */,
 				CD5CDA571CD910CC0002B236 /* ViewController.swift in Sources */,
 				CD5CDA551CD910CC0002B236 /* AppDelegate.swift in Sources */,
+				CD5CDAA71CD92E7E0002B236 /* ProductReviewViewController.swift in Sources */,
+				CD5CDA881CD919C40002B236 /* ProductCollectionViewCell.swift in Sources */,
+				CD5CDA861CD917E90002B236 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +500,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProductsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -415,10 +514,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProductsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -487,6 +589,7 @@
 				CD5CDA7B1CD910CC0002B236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD5CDA7C1CD910CC0002B236 /* Build configuration list for PBXNativeTarget "ProductsViewTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +598,7 @@
 				CD5CDA7E1CD910CC0002B236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD5CDA7F1CD910CC0002B236 /* Build configuration list for PBXNativeTarget "ProductsViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +607,7 @@
 				CD5CDA811CD910CC0002B236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
