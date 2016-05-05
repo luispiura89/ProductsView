@@ -255,67 +255,19 @@
                                 <rect key="frame" x="20" y="64" width="560" height="536"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gWJ-bp-po2">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="536"/>
+                                        <rect key="frame" x="150.5" y="98" width="260" height="180"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="560" id="IIa-JE-gix"/>
-                                            <constraint firstAttribute="width" constant="544" id="IUo-lN-WMa"/>
-                                            <constraint firstAttribute="height" constant="536" id="VDJ-i3-4MT"/>
-                                            <constraint firstAttribute="width" constant="481" id="W5b-by-4Os"/>
-                                            <constraint firstAttribute="height" constant="536" id="cVf-m8-KNx"/>
-                                            <constraint firstAttribute="height" constant="241" id="cnK-th-22t"/>
-                                            <constraint firstAttribute="height" constant="564" id="ifU-fp-GKj"/>
-                                            <constraint firstAttribute="width" constant="315" id="nZe-PJ-5Vo"/>
-                                            <constraint firstAttribute="width" constant="560" id="sTN-kI-6jZ"/>
-                                            <constraint firstAttribute="height" constant="447" id="zeq-L1-Hqq"/>
+                                            <constraint firstAttribute="height" constant="180" id="5iE-oZ-lD1"/>
+                                            <constraint firstAttribute="width" constant="260" id="AIh-09-9Iq"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="IIa-JE-gix"/>
-                                                <exclude reference="IUo-lN-WMa"/>
-                                                <exclude reference="VDJ-i3-4MT"/>
-                                                <exclude reference="W5b-by-4Os"/>
-                                                <exclude reference="cnK-th-22t"/>
-                                                <exclude reference="ifU-fp-GKj"/>
-                                                <exclude reference="nZe-PJ-5Vo"/>
-                                                <exclude reference="zeq-L1-Hqq"/>
-                                            </mask>
-                                        </variation>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="top" secondItem="5mS-z4-Jjh" secondAttribute="top" constant="8" id="7hY-9G-j9B"/>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="leading" secondItem="5mS-z4-Jjh" secondAttribute="leading" constant="123" id="9pN-wX-R5g"/>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="leading" secondItem="5mS-z4-Jjh" secondAttribute="leading" constant="8" id="GoC-UY-jJN"/>
-                                    <constraint firstAttribute="bottom" secondItem="gWJ-bp-po2" secondAttribute="bottom" constant="8" id="H43-B0-ARn"/>
-                                    <constraint firstAttribute="bottom" secondItem="gWJ-bp-po2" secondAttribute="bottom" constant="58" id="IBB-V6-RGW"/>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="leading" secondItem="5mS-z4-Jjh" secondAttribute="leading" id="Lxh-ru-o12"/>
-                                    <constraint firstAttribute="bottom" secondItem="gWJ-bp-po2" secondAttribute="bottom" constant="244" id="MG3-7s-J8F"/>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="leading" secondItem="5mS-z4-Jjh" secondAttribute="leading" constant="40" id="Trm-Ks-FVI"/>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="top" secondItem="5mS-z4-Jjh" secondAttribute="top" constant="31" id="TzH-6u-wtk"/>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="top" secondItem="5mS-z4-Jjh" secondAttribute="top" id="ZRt-4z-ZFA"/>
-                                    <constraint firstAttribute="trailing" secondItem="gWJ-bp-po2" secondAttribute="trailing" id="a4t-kN-zgb"/>
-                                    <constraint firstAttribute="trailing" secondItem="gWJ-bp-po2" secondAttribute="trailing" constant="39" id="bAs-3B-Ro4"/>
-                                    <constraint firstAttribute="bottom" secondItem="gWJ-bp-po2" secondAttribute="bottom" id="drz-hV-7Hq"/>
-                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="top" secondItem="5mS-z4-Jjh" secondAttribute="top" constant="51" id="kI3-Jd-OZM"/>
-                                    <constraint firstAttribute="trailing" secondItem="gWJ-bp-po2" secondAttribute="trailing" constant="122" id="v8p-Qz-yWJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="gWJ-bp-po2" secondAttribute="trailing" constant="8" id="wAo-gl-n5P"/>
+                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="top" secondItem="5mS-z4-Jjh" secondAttribute="top" constant="98" id="4e5-gb-cLU"/>
+                                    <constraint firstAttribute="trailing" secondItem="gWJ-bp-po2" secondAttribute="trailing" constant="149.5" id="gzJ-tC-1Iz"/>
+                                    <constraint firstAttribute="bottom" secondItem="gWJ-bp-po2" secondAttribute="bottom" constant="251" id="muv-53-x95"/>
+                                    <constraint firstItem="gWJ-bp-po2" firstAttribute="centerX" secondItem="5mS-z4-Jjh" secondAttribute="centerX" id="rgP-bo-0PT"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="7hY-9G-j9B"/>
-                                        <exclude reference="9pN-wX-R5g"/>
-                                        <exclude reference="GoC-UY-jJN"/>
-                                        <exclude reference="H43-B0-ARn"/>
-                                        <exclude reference="IBB-V6-RGW"/>
-                                        <exclude reference="MG3-7s-J8F"/>
-                                        <exclude reference="Trm-Ks-FVI"/>
-                                        <exclude reference="TzH-6u-wtk"/>
-                                        <exclude reference="bAs-3B-Ro4"/>
-                                        <exclude reference="kI3-Jd-OZM"/>
-                                        <exclude reference="v8p-Qz-yWJ"/>
-                                        <exclude reference="wAo-gl-n5P"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outlet property="delegate" destination="jnE-4T-SpD" id="2hG-4X-hAq"/>
                                 </connections>
@@ -323,10 +275,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LFo-Le-dmj" firstAttribute="top" secondItem="5mS-z4-Jjh" secondAttribute="bottom" id="FUD-cL-nxQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5mS-z4-Jjh" secondAttribute="trailing" id="LFm-Ox-YQd"/>
-                            <constraint firstItem="5mS-z4-Jjh" firstAttribute="top" secondItem="Y1u-DQ-BIh" secondAttribute="bottom" id="dU2-Xc-E97"/>
-                            <constraint firstItem="5mS-z4-Jjh" firstAttribute="leading" secondItem="XZC-Fr-aqe" secondAttribute="leadingMargin" id="hk3-Ou-Sic"/>
+                            <constraint firstItem="5mS-z4-Jjh" firstAttribute="top" secondItem="Y1u-DQ-BIh" secondAttribute="bottom" id="TdS-9x-g29"/>
+                            <constraint firstItem="LFo-Le-dmj" firstAttribute="top" secondItem="5mS-z4-Jjh" secondAttribute="bottom" id="eKL-0Y-sVH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5mS-z4-Jjh" secondAttribute="leading" id="lNL-91-KRH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5mS-z4-Jjh" secondAttribute="trailing" id="vQ6-tb-emr"/>
                         </constraints>
                     </view>
                     <connections>
