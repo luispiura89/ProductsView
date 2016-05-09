@@ -15,9 +15,9 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     var product: Product!{
         didSet{
-            self.layer.borderWidth = 0.3
-            self.layer.borderColor = UIColor.lightGrayColor().CGColor
-            self.layer.cornerRadius = 5
+            //self.layer.borderWidth = 0.3
+            //self.layer.borderColor = UIColor.lightGrayColor().CGColor
+            //self.layer.cornerRadius = 5
             /*productImageView.layer.borderWidth = 0.5
             productImageView.layer.borderColor = UIColor.lightGrayColor().CGColor
             

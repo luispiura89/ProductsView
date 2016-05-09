@@ -27,7 +27,7 @@ class ImageScrollerViewController: UIViewController, UIScrollViewDelegate {
         imageScrollView.maximumZoomScale = 3.0
         imageScrollView.contentSize = self.view.frame.size
         
-        self.navigationController?.hidesBarsOnTap = true
+        //self.navigationController?.hidesBarsOnTap = true
     }
 
     override func didReceiveMemoryWarning() {

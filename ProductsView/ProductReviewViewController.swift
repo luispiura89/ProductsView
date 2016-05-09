@@ -59,13 +59,13 @@ class ProductReviewViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("actionCell")!
         
-        let actionLabel = indexPath.row == 0 ? "Rate" : indexPath.row == 1 ? "Buy" : indexPath.row == 2 ? "Write Review" : "Product Info"
+        let actionLabel = indexPath.row == 0 ? "Rate" : indexPath.row == 1 ? "Buy" : indexPath.row == 2 ? "Write Review" : indexPath.row == 3 ? "Product Info" : "Find Us"
         
         cell.textLabel?.text = actionLabel
         cell.textLabel?.font = UIFont.systemFontOfSize(14)

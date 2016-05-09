@@ -13,6 +13,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var produtcs = [Product]()
     var selectedProduct: Product!
     
+    @IBOutlet weak var itemsCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,8 +52,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        let size = Int(self.view.frame.width / 2) - 20
-        return CGSize(width: size, height: 180)
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad{
+            let size = Int(self.view.frame.width / 3) - 20
+            return CGSize(width: size, height: 180)
+        }else{
+            let size = Int(self.view.frame.width / 2) - 20
+            return CGSize(width: size, height: 180)
+        }
     }
     
     //MARK: - Navigation
