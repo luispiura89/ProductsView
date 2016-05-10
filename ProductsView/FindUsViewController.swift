@@ -82,6 +82,33 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
         annotationView.layer.cornerRadius = 20
         annotationView.layer.masksToBounds = true
         
+        UIView.animateKeyframesWithDuration(2.0, delay: 0.0, options: UIViewKeyframeAnimationOptions.Repeat, animations: {
+            
+            let duration = 2.0
+            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration:duration / 4, animations: {
+                annotationView.transform = CGAffineTransformMakeScale(1.2, 1.2)
+                
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: duration / 4, animations: {
+                annotationView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+            })
+            
+            
+            UIView.addKeyframeWithRelativeStartTime(1, relativeDuration: duration / 4, animations: {
+                annotationView.transform = CGAffineTransformIdentity
+            })
+            
+            
+            UIView.addKeyframeWithRelativeStartTime(1.5, relativeDuration: duration / 4, animations: {
+                annotationView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+            })
+            
+            
+        }) { (complete: Bool) in
+            
+        }
+        
         return annotationView
     }
     
