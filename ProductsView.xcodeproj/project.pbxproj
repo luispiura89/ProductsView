@@ -29,6 +29,9 @@
 		CD5CDAA31CD92BA00002B236 /* MacbookPro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDAA21CD92BA00002B236 /* MacbookPro.jpg */; };
 		CD5CDAA51CD92BF50002B236 /* Washer.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDAA41CD92BF50002B236 /* Washer.gif */; };
 		CD5CDAA71CD92E7E0002B236 /* ProductReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */; };
+		CDE3043D1CE18FDE007A4E59 /* FindUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */; };
+		CDE3043F1CE1912C007A4E59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3043E1CE1912C007A4E59 /* MapKit.framework */; };
+		CDE304411CE19BE0007A4E59 /* annotationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE304401CE19BE0007A4E59 /* annotationImage.png */; };
 		CDE51B3D1CDA5B010089B5FF /* ImageScrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +81,9 @@
 		CD5CDAA21CD92BA00002B236 /* MacbookPro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MacbookPro.jpg; sourceTree = "<group>"; };
 		CD5CDAA41CD92BF50002B236 /* Washer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Washer.gif; sourceTree = "<group>"; };
 		CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductReviewViewController.swift; sourceTree = "<group>"; };
+		CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUsViewController.swift; sourceTree = "<group>"; };
+		CDE3043E1CE1912C007A4E59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CDE304401CE19BE0007A4E59 /* annotationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = annotationImage.png; path = ../../../../../Downloads/annotationImage.png; sourceTree = "<group>"; };
 		CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE3043F1CE1912C007A4E59 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +116,7 @@
 		CD5CDA481CD910CC0002B236 = {
 			isa = PBXGroup;
 			children = (
+				CDE3043E1CE1912C007A4E59 /* MapKit.framework */,
 				CD5CDA531CD910CC0002B236 /* ProductsView */,
 				CD5CDA681CD910CC0002B236 /* ProductsViewTests */,
 				CD5CDA731CD910CC0002B236 /* ProductsViewUITests */,
@@ -129,6 +137,7 @@
 		CD5CDA531CD910CC0002B236 /* ProductsView */ = {
 			isa = PBXGroup;
 			children = (
+				CDE304401CE19BE0007A4E59 /* annotationImage.png */,
 				CD5CDA8B1CD91FEC0002B236 /* iPad4.jpeg */,
 				CD5CDAA41CD92BF50002B236 /* Washer.gif */,
 				CD5CDA8C1CD91FEC0002B236 /* iPodTouch6g.jpg */,
@@ -186,6 +195,7 @@
 				CD5CDA561CD910CC0002B236 /* ViewController.swift */,
 				CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */,
 				CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */,
+				CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -316,6 +326,7 @@
 				CD5CDA971CD91FEC0002B236 /* iPodTouch6g.jpg in Resources */,
 				CD5CDA5F1CD910CC0002B236 /* LaunchScreen.storyboard in Resources */,
 				CD5CDA9B1CD91FEC0002B236 /* Barcelona16.jpg in Resources */,
+				CDE304411CE19BE0007A4E59 /* annotationImage.png in Resources */,
 				CD5CDAA11CD92B180002B236 /* iPodTouch6g.jpeg in Resources */,
 				CD5CDA961CD91FEC0002B236 /* iPad4.jpeg in Resources */,
 				CD5CDA5C1CD910CC0002B236 /* Assets.xcassets in Resources */,
@@ -357,6 +368,7 @@
 				CD5CDAA71CD92E7E0002B236 /* ProductReviewViewController.swift in Sources */,
 				CD5CDA881CD919C40002B236 /* ProductCollectionViewCell.swift in Sources */,
 				CD5CDA861CD917E90002B236 /* Product.swift in Sources */,
+				CDE3043D1CE18FDE007A4E59 /* FindUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

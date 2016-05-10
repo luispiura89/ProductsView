@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ProductReviewViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -44,6 +45,13 @@ class ProductReviewViewController: UIViewController, UITableViewDelegate, UITabl
                 vc.productImage = product.image
             }
         }
+        
+        if segue.identifier == "findUs"{
+            if let vc = segue.destinationViewController as? FindUsViewController{
+                vc.productImage = productImageView.image
+                vc.productLocation = CLLocation(latitude:  CLLocationDegrees(product.latitude), longitude: CLLocationDegrees(product.longitude))
+            }
+        }
     }
     
     @IBAction func showImage(sender: AnyObject) {
@@ -79,6 +87,13 @@ class ProductReviewViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.1
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        if cell?.textLabel?.text == "Find Us"{
+            performSegueWithIdentifier("findUs", sender: self)
+        }
     }
     
     

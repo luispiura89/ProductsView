@@ -27,9 +27,12 @@ class Product: NSObject {
     var count: Int!
     var brand: String!
     var model: String!
+    var latitude: Float!
+    var longitude: Float!
     
     init(name: String, summary: String, category: ProductCategory,
-         rate: Float, image: UIImage, count: Int, brand: String, model: String) {
+         rate: Float, image: UIImage, count: Int, brand: String, model: String,
+         latitude: Float, longitude: Float) {
         self.name = name
         self.summary = summary
         self.category = category
@@ -38,5 +41,7 @@ class Product: NSObject {
         self.count = count
         self.brand = brand
         self.model = model
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }
