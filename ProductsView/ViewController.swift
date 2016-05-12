@@ -71,6 +71,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    //MARK: - Outlet Actions
+    
+    @IBAction func goUserPreferences(sender: AnyObject) {
+        performSegueWithIdentifier("userConfig", sender: self)
+    }
+    
+    
+    
     //MARK: - Load Data Functions
     
     func loadProducts() -> [Product]{

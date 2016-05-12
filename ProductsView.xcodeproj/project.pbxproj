@@ -10,7 +10,6 @@
 		CD5CDA551CD910CC0002B236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA541CD910CC0002B236 /* AppDelegate.swift */; };
 		CD5CDA571CD910CC0002B236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA561CD910CC0002B236 /* ViewController.swift */; };
 		CD5CDA5A1CD910CC0002B236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA581CD910CC0002B236 /* Main.storyboard */; };
-		CD5CDA5C1CD910CC0002B236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA5B1CD910CC0002B236 /* Assets.xcassets */; };
 		CD5CDA5F1CD910CC0002B236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDA5D1CD910CC0002B236 /* LaunchScreen.storyboard */; };
 		CD5CDA6A1CD910CC0002B236 /* ProductsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA691CD910CC0002B236 /* ProductsViewTests.swift */; };
 		CD5CDA751CD910CC0002B236 /* ProductsViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDA741CD910CC0002B236 /* ProductsViewUITests.swift */; };
@@ -29,6 +28,9 @@
 		CD5CDAA31CD92BA00002B236 /* MacbookPro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDAA21CD92BA00002B236 /* MacbookPro.jpg */; };
 		CD5CDAA51CD92BF50002B236 /* Washer.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD5CDAA41CD92BF50002B236 /* Washer.gif */; };
 		CD5CDAA71CD92E7E0002B236 /* ProductReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */; };
+		CDACC3AE1CE4554700B8BD28 /* UserPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDACC3AD1CE4554700B8BD28 /* UserPreferencesViewController.swift */; };
+		CDACC3B01CE45C7A00B8BD28 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDACC3AF1CE45C7A00B8BD28 /* Media.xcassets */; };
+		CDACC3B21CE45E3B00B8BD28 /* UserConfigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDACC3B11CE45E3B00B8BD28 /* UserConfigTableViewCell.swift */; };
 		CDE3043D1CE18FDE007A4E59 /* FindUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */; };
 		CDE3043F1CE1912C007A4E59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3043E1CE1912C007A4E59 /* MapKit.framework */; };
 		CDE304411CE19BE0007A4E59 /* annotationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE304401CE19BE0007A4E59 /* annotationImage.png */; };
@@ -57,7 +59,6 @@
 		CD5CDA541CD910CC0002B236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5CDA561CD910CC0002B236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD5CDA591CD910CC0002B236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD5CDA5B1CD910CC0002B236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD5CDA5E1CD910CC0002B236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD5CDA601CD910CC0002B236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5CDA651CD910CC0002B236 /* ProductsViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +82,9 @@
 		CD5CDAA21CD92BA00002B236 /* MacbookPro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MacbookPro.jpg; sourceTree = "<group>"; };
 		CD5CDAA41CD92BF50002B236 /* Washer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Washer.gif; sourceTree = "<group>"; };
 		CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductReviewViewController.swift; sourceTree = "<group>"; };
+		CDACC3AD1CE4554700B8BD28 /* UserPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewController.swift; sourceTree = "<group>"; };
+		CDACC3AF1CE45C7A00B8BD28 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		CDACC3B11CE45E3B00B8BD28 /* UserConfigTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfigTableViewCell.swift; sourceTree = "<group>"; };
 		CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUsViewController.swift; sourceTree = "<group>"; };
 		CDE3043E1CE1912C007A4E59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CDE304401CE19BE0007A4E59 /* annotationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = annotationImage.png; path = ../../../../../Downloads/annotationImage.png; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 		CD5CDA481CD910CC0002B236 = {
 			isa = PBXGroup;
 			children = (
+				CDACC3AF1CE45C7A00B8BD28 /* Media.xcassets */,
 				CDE3043E1CE1912C007A4E59 /* MapKit.framework */,
 				CD5CDA531CD910CC0002B236 /* ProductsView */,
 				CD5CDA681CD910CC0002B236 /* ProductsViewTests */,
@@ -156,7 +161,6 @@
 				CD5CDA821CD9170E0002B236 /* Model */,
 				CD5CDA541CD910CC0002B236 /* AppDelegate.swift */,
 				CD5CDA581CD910CC0002B236 /* Main.storyboard */,
-				CD5CDA5B1CD910CC0002B236 /* Assets.xcassets */,
 				CD5CDA5D1CD910CC0002B236 /* LaunchScreen.storyboard */,
 				CD5CDA601CD910CC0002B236 /* Info.plist */,
 			);
@@ -196,6 +200,7 @@
 				CD5CDAA61CD92E7E0002B236 /* ProductReviewViewController.swift */,
 				CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */,
 				CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */,
+				CDACC3AD1CE4554700B8BD28 /* UserPreferencesViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				CD5CDA871CD919C40002B236 /* ProductCollectionViewCell.swift */,
+				CDACC3B11CE45E3B00B8BD28 /* UserConfigTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -329,10 +335,10 @@
 				CDE304411CE19BE0007A4E59 /* annotationImage.png in Resources */,
 				CD5CDAA11CD92B180002B236 /* iPodTouch6g.jpeg in Resources */,
 				CD5CDA961CD91FEC0002B236 /* iPad4.jpeg in Resources */,
-				CD5CDA5C1CD910CC0002B236 /* Assets.xcassets in Resources */,
 				CD5CDA9F1CD91FEC0002B236 /* MilesDavisKindofBlue.jpg in Resources */,
 				CD5CDA9D1CD91FEC0002B236 /* Stove.jpg in Resources */,
 				CD5CDA981CD91FEC0002B236 /* GibsonL5.jpg in Resources */,
+				CDACC3B01CE45C7A00B8BD28 /* Media.xcassets in Resources */,
 				CD5CDA9A1CD91FEC0002B236 /* DangelicoEx.jpg in Resources */,
 				CD5CDAA51CD92BF50002B236 /* Washer.gif in Resources */,
 				CD5CDA991CD91FEC0002B236 /* SonorBop.jpg in Resources */,
@@ -363,11 +369,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE51B3D1CDA5B010089B5FF /* ImageScrollerViewController.swift in Sources */,
+				CDACC3B21CE45E3B00B8BD28 /* UserConfigTableViewCell.swift in Sources */,
 				CD5CDA571CD910CC0002B236 /* ViewController.swift in Sources */,
 				CD5CDA551CD910CC0002B236 /* AppDelegate.swift in Sources */,
 				CD5CDAA71CD92E7E0002B236 /* ProductReviewViewController.swift in Sources */,
 				CD5CDA881CD919C40002B236 /* ProductCollectionViewCell.swift in Sources */,
 				CD5CDA861CD917E90002B236 /* Product.swift in Sources */,
+				CDACC3AE1CE4554700B8BD28 /* UserPreferencesViewController.swift in Sources */,
 				CDE3043D1CE18FDE007A4E59 /* FindUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

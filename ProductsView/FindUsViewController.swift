@@ -68,19 +68,32 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
     //MARK: - MapView Delegate
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        
         let annotationView = MKAnnotationView()
         
-        let pinImage = productImage//UIImage(named: "iPad4.jpeg")
+
+        
+
+        
+        //view.layer.addSublayer(shapeLayer)
+        
+        let pinImage = productImage
         let size = CGSize(width: 50, height: 50)
+        let rect = CGRectMake(0, 0, size.width, size.height)
         UIGraphicsBeginImageContext(size)
-        pinImage!.drawInRect(CGRectMake(0, 0, size.width, size.height))
+        pinImage!.drawInRect(rect)
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
-        
-        annotationView.image = resizedImage
-        annotationView.layer.cornerRadius = 20
+    
+    
         annotationView.layer.masksToBounds = true
+        annotationView.image = resizedImage
+        annotationView.layer.cornerRadius = annotationView.frame.width / 2
+        
+        
+
+        
         
         UIView.animateKeyframesWithDuration(2.0, delay: 0.0, options: UIViewKeyframeAnimationOptions.Repeat, animations: {
             
@@ -108,6 +121,8 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
         }) { (complete: Bool) in
             
         }
+        
+     
         
         return annotationView
     }
