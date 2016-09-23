@@ -289,7 +289,7 @@
 				TargetAttributes = {
 					CD5CDA501CD910CC0002B236 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = FJ44GB6X5Y;
+						DevelopmentTeam = A6GBL74394;
 					};
 					CD5CDA641CD910CC0002B236 = {
 						CreatedOnToolsVersion = 7.3;
@@ -524,7 +524,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProductsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -538,7 +538,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProductsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

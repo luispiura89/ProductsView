@@ -14,6 +14,7 @@ class ProductReviewViewController: UIViewController, UITableViewDelegate, UITabl
     var product: Product!
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var optionsTableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -23,6 +24,25 @@ class ProductReviewViewController: UIViewController, UITableViewDelegate, UITabl
             productImageView.image = productUW.image
             productNameLabel.text = productUW.name
         }
+        
+        let tableViewY = optionsTableView.center.y
+        let nameLabelY = productNameLabel.center.y
+        
+        optionsTableView.center.y = optionsTableView.center.y + 20
+        productNameLabel.center.y = productNameLabel.center.y + 20
+        
+        productImageView.transform = CGAffineTransformMakeTranslation(-50, 0)
+        
+        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 100, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            self.optionsTableView.center.y = tableViewY
+            self.productNameLabel.center.y = nameLabelY
+        }) { (complete: Bool) in
+            
+        }
+        
+        UIView.animateKeyframesWithDuration(0.5, delay: 0.0, options: UIViewKeyframeAnimationOptions.BeginFromCurrentState, animations: {
+            self.productImageView.transform = CGAffineTransformIdentity
+            }, completion: nil)
 
         // Do any additional setup after loading the view.
     }

@@ -22,6 +22,32 @@ class UserConfigTableViewCell: UITableViewCell {
             case "profileCell":
                 userProfileImage.layer.cornerRadius = userProfileImage.frame.width / 2
                 userNameLabel.text = labelText
+                
+                self.userProfileImage.transform = CGAffineTransformMakeTranslation(-5, 0)
+                let userLabelX = userNameLabel.center.x
+                
+                userNameLabel.center.x = userNameLabel.center.x + 10
+                
+                /*
+                UIView.animateWithDuration(2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+                    self.userProfileImage.transform = CGAffineTransformIdentity
+                    
+                    }, completion: { (complete: Bool) in
+                        
+                })*/
+                
+                
+                UIView.animateWithDuration(2.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 100, options: .CurveEaseOut, animations: {
+                    
+                    self.userProfileImage.transform = CGAffineTransformIdentity
+                
+                    self.userNameLabel.center.x = userLabelX
+                    
+                    
+                    }, completion: { (complete:Bool) in
+                        
+                })
+                
             case "simpleCell":
                 simpleCellLabel.text = labelText
             case "switchCell":
