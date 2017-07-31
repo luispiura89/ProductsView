@@ -33,7 +33,6 @@
 		CDACC3B21CE45E3B00B8BD28 /* UserConfigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDACC3B11CE45E3B00B8BD28 /* UserConfigTableViewCell.swift */; };
 		CDE3043D1CE18FDE007A4E59 /* FindUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */; };
 		CDE3043F1CE1912C007A4E59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3043E1CE1912C007A4E59 /* MapKit.framework */; };
-		CDE304411CE19BE0007A4E59 /* annotationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE304401CE19BE0007A4E59 /* annotationImage.png */; };
 		CDE51B3D1CDA5B010089B5FF /* ImageScrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +86,6 @@
 		CDACC3B11CE45E3B00B8BD28 /* UserConfigTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfigTableViewCell.swift; sourceTree = "<group>"; };
 		CDE3043C1CE18FDE007A4E59 /* FindUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUsViewController.swift; sourceTree = "<group>"; };
 		CDE3043E1CE1912C007A4E59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CDE304401CE19BE0007A4E59 /* annotationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = annotationImage.png; path = ../../../../../Downloads/annotationImage.png; sourceTree = "<group>"; };
 		CDE51B3C1CDA5B010089B5FF /* ImageScrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +140,6 @@
 		CD5CDA531CD910CC0002B236 /* ProductsView */ = {
 			isa = PBXGroup;
 			children = (
-				CDE304401CE19BE0007A4E59 /* annotationImage.png */,
 				CD5CDA8B1CD91FEC0002B236 /* iPad4.jpeg */,
 				CD5CDAA41CD92BF50002B236 /* Washer.gif */,
 				CD5CDA8C1CD91FEC0002B236 /* iPodTouch6g.jpg */,
@@ -290,15 +287,18 @@
 					CD5CDA501CD910CC0002B236 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = A6GBL74394;
+						LastSwiftMigration = 0830;
 					};
 					CD5CDA641CD910CC0002B236 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = A6GBL74394;
+						LastSwiftMigration = 0830;
 						TestTargetID = CD5CDA501CD910CC0002B236;
 					};
 					CD5CDA6F1CD910CC0002B236 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = A6GBL74394;
+						LastSwiftMigration = 0830;
 						TestTargetID = CD5CDA501CD910CC0002B236;
 					};
 				};
@@ -332,7 +332,6 @@
 				CD5CDA971CD91FEC0002B236 /* iPodTouch6g.jpg in Resources */,
 				CD5CDA5F1CD910CC0002B236 /* LaunchScreen.storyboard in Resources */,
 				CD5CDA9B1CD91FEC0002B236 /* Barcelona16.jpg in Resources */,
-				CDE304411CE19BE0007A4E59 /* annotationImage.png in Resources */,
 				CD5CDAA11CD92B180002B236 /* iPodTouch6g.jpeg in Resources */,
 				CD5CDA961CD91FEC0002B236 /* iPad4.jpeg in Resources */,
 				CD5CDA9F1CD91FEC0002B236 /* MilesDavisKindofBlue.jpg in Resources */,
@@ -527,6 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -541,6 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsView2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -552,6 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProductsView.app/ProductsView";
 			};
 			name = Debug;
@@ -564,6 +566,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProductsView.app/ProductsView";
 			};
 			name = Release;
@@ -575,6 +578,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ProductsView;
 			};
 			name = Debug;
@@ -586,6 +590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smoothct.ProductsViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ProductsView;
 			};
 			name = Release;

@@ -31,17 +31,17 @@ class ProductReviewViewController: UIViewController, UITableViewDelegate, UITabl
         optionsTableView.center.y = optionsTableView.center.y + 20
         productNameLabel.center.y = productNameLabel.center.y + 20
         
-        productImageView.transform = CGAffineTransformMakeTranslation(-50, 0)
+        productImageView.transform = CGAffineTransform(translationX: -50, y: 0)
         
-        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 100, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 100, options: UIViewAnimationOptions.curveEaseOut, animations: {
             self.optionsTableView.center.y = tableViewY
             self.productNameLabel.center.y = nameLabelY
         }) { (complete: Bool) in
             
         }
         
-        UIView.animateKeyframesWithDuration(0.5, delay: 0.0, options: UIViewKeyframeAnimationOptions.BeginFromCurrentState, animations: {
-            self.productImageView.transform = CGAffineTransformIdentity
+        UIView.animateKeyframes(withDuration: 0.5, delay: 0.0, options: UIViewKeyframeAnimationOptions.beginFromCurrentState, animations: {
+            self.productImageView.transform = CGAffineTransform.identity
             }, completion: nil)
 
         // Do any additional setup after loading the view.
@@ -57,62 +57,62 @@ class ProductReviewViewController: UIViewController, UITableViewDelegate, UITabl
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "showImage"{
-            if let vc = segue.destinationViewController as? ImageScrollerViewController{
+            if let vc = segue.destination as? ImageScrollerViewController{
                 vc.productImage = product.image
             }
         }
         
         if segue.identifier == "findUs"{
-            if let vc = segue.destinationViewController as? FindUsViewController{
+            if let vc = segue.destination as? FindUsViewController{
                 vc.productImage = productImageView.image
                 vc.productLocation = CLLocation(latitude:  CLLocationDegrees(product.latitude), longitude: CLLocationDegrees(product.longitude))
             }
         }
     }
     
-    @IBAction func showImage(sender: AnyObject) {
-        performSegueWithIdentifier("showImage", sender: self)
+    @IBAction func showImage(_ sender: AnyObject) {
+        performSegue(withIdentifier: "showImage", sender: self)
     }
     
     
     
     //MARK: - Table View Delegate
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("actionCell")!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "actionCell")!
         
         let actionLabel = indexPath.row == 0 ? "Rate" : indexPath.row == 1 ? "Buy" : indexPath.row == 2 ? "Write Review" : indexPath.row == 3 ? "Product Info" : "Find Us"
         
         cell.textLabel?.text = actionLabel
-        cell.textLabel?.font = UIFont.systemFontOfSize(14)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 14)
         
         return cell
     }
     
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.1
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.1
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
         if cell?.textLabel?.text == "Find Us"{
-            performSegueWithIdentifier("findUs", sender: self)
+            performSegue(withIdentifier: "findUs", sender: self)
         }
     }
     

@@ -23,7 +23,7 @@ class UserConfigTableViewCell: UITableViewCell {
                 userProfileImage.layer.cornerRadius = userProfileImage.frame.width / 2
                 userNameLabel.text = labelText
                 
-                self.userProfileImage.transform = CGAffineTransformMakeTranslation(-5, 0)
+                self.userProfileImage.transform = CGAffineTransform(translationX: -5, y: 0)
                 let userLabelX = userNameLabel.center.x
                 
                 userNameLabel.center.x = userNameLabel.center.x + 10
@@ -37,9 +37,9 @@ class UserConfigTableViewCell: UITableViewCell {
                 })*/
                 
                 
-                UIView.animateWithDuration(2.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 100, options: .CurveEaseOut, animations: {
+                UIView.animate(withDuration: 2.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 100, options: .curveEaseOut, animations: {
                     
-                    self.userProfileImage.transform = CGAffineTransformIdentity
+                    self.userProfileImage.transform = CGAffineTransform.identity
                 
                     self.userNameLabel.center.x = userLabelX
                     
@@ -64,7 +64,7 @@ class UserConfigTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

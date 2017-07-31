@@ -35,11 +35,11 @@ class UserPreferencesViewController: UIViewController, UITableViewDelegate, UITa
     
     //MARK: - TableView Delegate
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 3
@@ -50,7 +50,7 @@ class UserPreferencesViewController: UIViewController, UITableViewDelegate, UITa
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var identifier: String!
         var textLabel: String!
@@ -68,7 +68,7 @@ class UserPreferencesViewController: UIViewController, UITableViewDelegate, UITa
             identifier = ""
         }
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(identifier) as! UserConfigTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! UserConfigTableViewCell
         
         cell.labelText = textLabel
         cell.cellType = identifier
@@ -79,7 +79,7 @@ class UserPreferencesViewController: UIViewController, UITableViewDelegate, UITa
         
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 && indexPath.section == 0{
             return 124.0
         }
@@ -87,16 +87,16 @@ class UserPreferencesViewController: UIViewController, UITableViewDelegate, UITa
         return 44.0
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 { return 0.1 }
         return 40.0
     }
     
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.1
     }
     
-    func tableView( tableView : UITableView,  titleForHeaderInSection section: Int)->String? {
+    func tableView( _ tableView : UITableView,  titleForHeaderInSection section: Int)->String? {
         switch(section) {
         case 1:
             return "About"

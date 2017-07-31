@@ -9,13 +9,13 @@
 import UIKit
 
 enum ProductCategory{
-    case Electronic
-    case Home
-    case Clothe
-    case Toy
-    case Service
-    case Music
-    case MusicalInstruments
+    case electronic
+    case home
+    case clothe
+    case toy
+    case service
+    case music
+    case musicalInstruments
 }
 
 class Product: NSObject {

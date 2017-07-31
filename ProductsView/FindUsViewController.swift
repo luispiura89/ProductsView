@@ -44,7 +44,7 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
     }
     */
     
-    func centerMapWithLocation(location: CLLocation){
+    func centerMapWithLocation(_ location: CLLocation){
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, radiusRegion, radiusRegion)
         findUsMapView.setRegion(coordinateRegion, animated: true)
         let mapAnnotation = MKPointAnnotation()
@@ -53,7 +53,7 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
         findUsMapView.addAnnotation(mapAnnotation)
         
         let geoCoder = CLGeocoder()
-        geoCoder.reverseGeocodeLocation(location) { (placemarks : [CLPlacemark]?, error: NSError?) in
+        geoCoder.reverseGeocodeLocation(location) { (placemarks : [CLPlacemark]?, error: Error?) in
             
             if let placemarks = placemarks{
                 if let placemark = placemarks.last{
@@ -67,7 +67,7 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
     
     //MARK: - MapView Delegate
     
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         
         let annotationView = MKAnnotationView()
@@ -80,9 +80,9 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
         
         let pinImage = productImage
         let size = CGSize(width: 50, height: 50)
-        let rect = CGRectMake(0, 0, size.width, size.height)
+        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContext(size)
-        pinImage!.drawInRect(rect)
+        pinImage!.draw(in: rect)
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
     
@@ -95,26 +95,26 @@ class FindUsViewController: UIViewController, MKMapViewDelegate {
 
         
         
-        UIView.animateKeyframesWithDuration(2.0, delay: 0.0, options: UIViewKeyframeAnimationOptions.Repeat, animations: {
+        UIView.animateKeyframes(withDuration: 2.0, delay: 0.0, options: UIViewKeyframeAnimationOptions.repeat, animations: {
             
             let duration = 2.0
-            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration:duration / 4, animations: {
-                annotationView.transform = CGAffineTransformMakeScale(1.2, 1.2)
+            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration:duration / 4, animations: {
+                annotationView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
                 
             })
             
-            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: duration / 4, animations: {
-                annotationView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: duration / 4, animations: {
+                annotationView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             })
             
             
-            UIView.addKeyframeWithRelativeStartTime(1, relativeDuration: duration / 4, animations: {
-                annotationView.transform = CGAffineTransformIdentity
+            UIView.addKeyframe(withRelativeStartTime: 1, relativeDuration: duration / 4, animations: {
+                annotationView.transform = CGAffineTransform.identity
             })
             
             
-            UIView.addKeyframeWithRelativeStartTime(1.5, relativeDuration: duration / 4, animations: {
-                annotationView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+            UIView.addKeyframe(withRelativeStartTime: 1.5, relativeDuration: duration / 4, animations: {
+                annotationView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             })
             
             

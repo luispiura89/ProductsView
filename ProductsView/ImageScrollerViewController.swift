@@ -48,7 +48,7 @@ class ImageScrollerViewController: UIViewController, UIScrollViewDelegate {
     
     //MARK: - ScrollViewDelegate
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return productImageView
     }
     
